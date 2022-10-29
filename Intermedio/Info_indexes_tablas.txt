@@ -1,0 +1,36 @@
+Tabla PROFESORES 
+	id:
+		primary key (clustered index) int
+
+Tabla CURSO
+	codigo:
+		primary key (clustered index) int 
+	profesor_id:
+		foreing key (non-clustered index) int
+
+Tabla ESTUDIANTES
+	legajo: 
+		primary key (clustered index), int
+
+Tabla INSCRIPCION
+	numero:
+		primary key (clustered index) int
+	CURSO_codigo:
+		foreign key (non-clustered index) int
+	ESTUDIANTE_codigo:
+		foreign key (non-clustered index) int
+
+Tabla PAIS
+	idpais:
+		primary key (clustered index) int
+
+Tabla PASAJERO
+	idpasajero:
+		primary key (clustered index) int
+	idpais:
+		foreign key (non-clustered index) int
+Tabla PAGO
+	idpago:
+		primary key (clustered index) int
+	idpasajero:
+		foreign key (non-clustered index) int

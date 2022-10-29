@@ -1,0 +1,1 @@
+SELECT * FROM PROFESOR WHERE PROFESOR.fecha_nacimiento BETWEEN "1980-*-*" AND "1989-*-*";

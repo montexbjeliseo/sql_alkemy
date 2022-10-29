@@ -1,0 +1,1 @@
+SELECT AVG(salario) FROM PROFESOR;
